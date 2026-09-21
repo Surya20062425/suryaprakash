@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --primary-green-neon: #9df133;
+  --primary-green-box: #84c72f;
+  --primary-green-box-stroke: #599f00;
+  --primary-green-line: #93e727;
+  --primary-green-divider: #8fd92f;
+  --background-bg-0: #000000;
+  --background-bg-1: #070707;
+  --background-bg-2: #0c0c0d;
+  --background-stroke-1: #25272f;
+  --background-stroke-2: #131418;
+  --text-white: #ffffff;
+  --text-white-grey: #b0b4c0;
+  --text-grey-1: #747785;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #000000;
+  color: #F5F0EB;
+  overflow-x: hidden;
+}
+
+/* Typography Utilities */
+.font-heading {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-mono {
+  font-family: 'DM Mono', monospace;
+}
+
+.font-sans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Authentic Notched / Chamfered Edge Patterns from Curtis Nguyen's portfolio */
+.chamfer-sm {
+  clip-path: polygon(0 4px, 4px 0, 100% 0, 100% calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+}
+
+.chamfer-badge {
+  clip-path: polygon(0% 4px, 4px 0%, 100% 0%, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
+}
+
+.chamfer-button {
+  clip-path: polygon(0% 8px, 8px 0%, 100% 0%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0% 100%);
+}
+
+.chamfer-card {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+}
+
+.chamfer-row {
+  clip-path: polygon(0% 12px, 12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%);
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25272f;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9df133;
+}
